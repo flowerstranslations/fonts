@@ -31,3 +31,7 @@ p{
     font-size:15px;
     color:white;
 }
+a{
+    outline:none; /* Removes the default outline for links */
+    text-decoration:none; /* Removes the default underline for links*/
+}
