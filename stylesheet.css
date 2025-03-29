@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'Geoform';
-    src: url('Geoform.woff2') format('woff2'),
-        url('Geoform.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: 'Bookerly';
     src: url('Bookerly-Regular.woff2') format('woff2'),
         url('Bookerly-Regular.woff') format('woff');
@@ -14,7 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Geo';
     font-style: normal;
@@ -22,15 +13,15 @@
     src: local('Geo'), url('Geo.woff') format('woff');
     }
 h1{
-    font-family:'geoform', sans-serif;
+    font-family:'geo', sans-serif;
     font-size:60px;
-    font-weight:600px;
+    font-weight:bolder;
     color:#f49a00;
 }
 h2{
-    font-family:'geoform', sans-serif;
+    font-family:'geo', sans-serif;
     font-size:40px;
-    font-weight:600px;
+    font-weight:bolder;
     color:#f49a00;
 }
 p{
