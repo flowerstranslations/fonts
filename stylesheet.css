@@ -21,3 +21,20 @@
     font-weight: normal;
     src: local('Geo'), url('Geo.woff') format('woff');
     }
+h1{
+    font-family:'geoform', sans-serif;
+    font-size:60px;
+    font-weight:600px;
+    color:#f49a00;
+}
+h2{
+    font-family:'geoform', sans-serif;
+    font-size:40px;
+    font-weight:600px;
+    color:#f49a00;
+}
+p{
+    font-family:'bookerly', sans-serif;
+    font-size:15px;
+    color:white;
+}
