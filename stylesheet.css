@@ -14,15 +14,17 @@
     }
 h1{
     font-family:'geo', sans-serif;
-    font-size:60px;
+    font-size:70px;
     font-weight:bolder;
     color:#f49a00;
+    text-align:center;
 }
 h2{
     font-family:'geo', sans-serif;
-    font-size:40px;
+    font-size:50px;
     font-weight:bolder;
     color:#f49a00;
+    text-align: center;
 }
 p{
     font-family:'bookerly', sans-serif;
