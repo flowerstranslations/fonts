@@ -45,8 +45,9 @@ h4{
 }
 p{
     font-family:'bookerly', sans-serif;
-    font-size:15px;
+    font-size:20px;
     color:white;
+    line-height:3;
 }
 a{
     outline:none; /* Removes the default outline for links */
