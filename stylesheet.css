@@ -142,7 +142,7 @@ a{
     text-decoration:none; /* Removes the default underline for links*/
 }
 
-.page-container .dark-theme{
+.page-container.dark-theme{
     display:flex;
     position:relative;
     margin:0 auto;
@@ -154,7 +154,7 @@ a{
     top:-100px;
     z-index:2;
 }
-.dashboard-container .dark-theme{
+.dashboard-container.dark-theme{
     position:relative;
     display:flex;
     flex-wrap:wrap;
@@ -165,15 +165,11 @@ a{
     background-color:black;
     gap:30px;
 }
-.tabs-font .dark-theme{
+.tabs-font.dark-theme{
     font-family:"poppins";
     font-size:20px;
     color:white;
     cursor:pointer;
-}
-.tabs-font .dark-theme:hover{
-    opacity:0.7;
-    transition:opacity 0.3s ease-in-out;
 }
 
 
@@ -220,7 +216,7 @@ p.light-theme{
     color:black;
     line-height:3;
 }
-.page-container .light-theme{
+.page-container.light-theme{
     display:flex;
     position:relative;
     margin:0 auto;
@@ -232,7 +228,7 @@ p.light-theme{
     top:-100px;
     z-index:2;
 }
-.dashboard-container .light-theme{
+.dashboard-container.light-theme{
     position:relative;
     display:flex;
     flex-wrap:wrap;
@@ -243,13 +239,9 @@ p.light-theme{
     background-color:rgb(255, 255, 255);
     gap:30px;
 }
-.tabs-font .light-theme{
+.tabs-font.light-theme{
     font-family:"poppins";
     font-size:20px;
     color:black;
     cursor:pointer;
-}
-.tabs-font .light-theme:hover{
-    opacity:0.7;
-    transition:opacity 0.3s ease-in-out;
 }
