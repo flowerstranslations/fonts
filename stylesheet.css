@@ -171,6 +171,10 @@ a{
     color:white;
     cursor:pointer;
 }
+.tabs-font .dark-theme:hover{
+    opacity:0.7;
+    transition:opacity 0.3s ease-in-out;
+}
 
 
 
@@ -181,12 +185,6 @@ body.light-theme{
     position:relative;
     margin:0; /*removes default margin 8px*/
     padding:0;
-}
-.tabs-font .light-theme{
-    font-family:"poppins";
-    font-size:20px;
-    color:black;
-    cursor:pointer;
 }
 h1.light-theme{
     font-family:'geo', sans-serif;
@@ -244,4 +242,14 @@ p.light-theme{
     height:80px;
     background-color:rgb(255, 255, 255);
     gap:30px;
+}
+.tabs-font .light-theme{
+    font-family:"poppins";
+    font-size:20px;
+    color:black;
+    cursor:pointer;
+}
+.tabs-font .light-theme:hover{
+    opacity:0.7;
+    transition:opacity 0.3s ease-in-out;
 }
