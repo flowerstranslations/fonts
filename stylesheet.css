@@ -65,7 +65,7 @@ a{
     text-decoration:none; /* Removes the default underline for links*/
 }
 
-.page-container{
+.page-container-dark-theme{
     display:flex;
     position:relative;
     margin:0 auto;
@@ -77,7 +77,7 @@ a{
     top:-100px;
     z-index:2;
 }
-.dashboard-container{
+.dashboard-container-dark-theme{
     position:relative;
     display:flex;
     flex-wrap:wrap;
@@ -88,7 +88,7 @@ a{
     background-color:black;
     gap:30px;
 }
-.tabs-font{
+.tabs-font-dark-theme{
     font-family:"poppins";
     font-size:20px;
     color:white;
