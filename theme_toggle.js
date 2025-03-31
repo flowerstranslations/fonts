@@ -13,7 +13,4 @@ toggleButton.addEventListener('click', function(){
         sunImage.style.visibility = "visible";
         moonImage.style.visibility = "hidden";
     }
-    console.log('current classes:', document.body.classList);
-    console.log('sun visibility:', window.getComputedStyle(sunImage).visibility);
-    console.log('moon visibility:', window.getComputedStyle(moonImage).visibility);
 });
