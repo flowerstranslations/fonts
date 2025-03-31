@@ -20,7 +20,7 @@
     font-style: normal;
     font-display: swap;
 }
-body{
+body.dark-theme{
     background-color:#0e0e0e;
     position:relative;
     margin:0; /*removes default margin 8px*/
