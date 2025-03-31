@@ -64,6 +64,15 @@ p{
 a{
     outline:none; /* Removes the default outline for links */
     text-decoration:none; /* Removes the default underline for links*/
+    color:inherit;
+}
+
+a:visited {
+    color: inherit; /* Inherit color even after the link is visited */
+}
+
+a:active {
+    color: inherit; /* Prevent blue on active link */
 }
 
 .page-container{
@@ -136,10 +145,6 @@ p.dark-theme{
     font-size:20px;
     color:white;
     line-height:3;
-}
-a{
-    outline:none; /* Removes the default outline for links */
-    text-decoration:none; /* Removes the default underline for links*/
 }
 
 .page-container.dark-theme{
