@@ -100,7 +100,7 @@ a{
 
 /*light theme*/
 body.light-theme{
-    background-color:#0e0e0e;
+    background-color:#ffffff;
     position:relative;
     margin:0; /*removes default margin 8px*/
     padding:0;
