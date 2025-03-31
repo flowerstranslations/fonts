@@ -1,18 +1,4 @@
 @font-face {
-    font-family: 'Bookerly';
-    src: url('Bookerly-Regular.woff2') format('woff2'),
-        url('Bookerly-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Geo';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Geo'), url('Geo.woff') format('woff');
-    }
-@font-face {
     font-family: 'Poppins';
     src: url('Poppins-Regular.woff2') format('woff2'),
         url('Poppins-Regular.woff') format('woff');
@@ -20,47 +6,4 @@
     font-style: normal;
     font-display: swap;
 }
-body{
-    background-color:#0e0e0e;
-    position:relative;
-    margin:0; /*removes default margin 8px*/
-    padding:0;
-}
-h1{
-    font-family:'geo', sans-serif;
-    font-size:70px;
-    font-weight:bolder;
-    color:#f49a00;
-    text-align:center;
-}
-h2{
-    font-family:'geo', sans-serif;
-    font-size:50px;
-    font-weight:bolder;
-    color:#f49a00;
-    text-align: center;
-}
-h3{
-    font-family:'geo', sans-serif;
-    font-size:40px;
-    font-weight:bolder;
-    color:#f49a00;
-    text-align: center;
-}
-h4{
-    font-family:'geo', sans-serif;
-    font-size:30px;
-    font-weight:bolder;
-    color:#f49a00;
-    text-align: center;
-}
-p{
-    font-family:'bookerly', sans-serif;
-    font-size:20px;
-    color:white;
-    line-height:3;
-}
-a{
-    outline:none; /* Removes the default outline for links */
-    text-decoration:none; /* Removes the default underline for links*/
-}
+
