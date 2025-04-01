@@ -1,52 +1,51 @@
-const toggleButton = document.getElementById('theme-toggle');
-const sunImage = document.getElementById('sun');
-const moonImage = document.getElementById('moon');
-
-// Elements to toggle theme
-const themeSwitch = [
-    document.body,
-    document.querySelector('.dashboard-container'),
-    ...document.querySelectorAll('.tabs-font'),
-    document.querySelector('.page-container'),
-    ...document.querySelectorAll('p'),
-];
-
-// Function to apply the theme
-function applyTheme(theme) {
-    if (theme === 'dark') {
-        sunImage.style.visibility = "visible";
-        moonImage.style.visibility = "hidden";
-        themeSwitch.forEach(element => {
-            element.classList.add('dark-theme');
-            element.classList.remove('light-theme');
-        });
-        console.log('Applied theme: dark mode');
-    } else {
-        sunImage.style.visibility = "hidden";
-        moonImage.style.visibility = "visible";
-        themeSwitch.forEach(element => {
-            element.classList.add('light-theme');
-            element.classList.remove('dark-theme');
-        });
-        console.log('Applied theme: light mode');
-    }
-}
-
-// ✅ Check and apply saved theme on page load
 document.addEventListener("DOMContentLoaded", function () {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    applyTheme(savedTheme);
-    document.body.classList.add(savedTheme === 'dark' ? 'dark-theme' : 'light-theme');
-});
+    const toggleButton = document.getElementById('theme-toggle');
+    const sunImage = document.getElementById('sun');
+    const moonImage = document.getElementById('moon');
+    const themeData = localStorage.getItem('theme') || 'dark';  // Default to dark theme if none stored
+    const themeSwitch = [
+        document.body,
+        document.querySelector('.dashboard-container'),
+        ...document.querySelectorAll('.tabs-font'),
+        document.querySelector('.page-container'),
+        ...document.querySelectorAll('p'),
+    ];
 
-// ✅ Toggle theme on button click
-toggleButton.addEventListener('click', function () {
-    let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-    let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    // Apply theme (dark or light)
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            sunImage.style.visibility = "visible";
+            moonImage.style.visibility = "hidden";
+            themeSwitch.forEach(element => {
+                if (element) {
+                    element.classList.add('dark-theme');
+                    element.classList.remove('light-theme');
+                }
+            });
+        } else {
+            sunImage.style.visibility = "hidden";
+            moonImage.style.visibility = "visible";
+            themeSwitch.forEach(element => {
+                if (element) {
+                    element.classList.add('light-theme');
+                    element.classList.remove('dark-theme');
+                }
+            });
+        }
+    }
 
-    // Save new theme
-    localStorage.setItem('theme', newTheme);
+    // Set initial theme based on localStorage or default (dark)
+    applyTheme(themeData);
 
-    // Apply new theme
-    applyTheme(newTheme);
+    // Add event listener to toggle button
+    toggleButton.addEventListener('click', function () {
+        let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // Save the theme preference to localStorage
+        localStorage.setItem('theme', newTheme);
+
+        // Apply the new theme
+        applyTheme(newTheme);
+    });
 });
