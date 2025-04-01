@@ -200,7 +200,6 @@ p.dark-theme{
     display:flex;
     align-items:center;
     justify-content: center;
-    width:150px;
     height:30px;
     font-family:"poppins";
     font-size:20px;
@@ -291,7 +290,6 @@ p.light-theme{
     display:flex;
     align-items:center;
     justify-content: center;
-    width:150px;
     height:30px;
     font-family:"poppins";
     font-size:20px;
