@@ -88,7 +88,7 @@ a:active {
     z-index:2;
 }
 .dashboard-container{
-    position:relative;
+    position:fixed;
     display:flex;
     flex-wrap:wrap;
     align-items: center;
@@ -97,6 +97,7 @@ a:active {
     height:80px;
     background-color:black;
     gap:30px;
+    z-index: 2000;
 }
 .tabs-font{
     font-family:"poppins";
@@ -160,7 +161,7 @@ p.dark-theme{
     z-index:2;
 }
 .dashboard-container.dark-theme{
-    position:relative;
+    position:fixed;
     display:flex;
     flex-wrap:wrap;
     align-items: center;
@@ -169,6 +170,7 @@ p.dark-theme{
     height:80px;
     background-color:black;
     gap:30px;
+    z-index: 2000;
 }
 .tabs-font.dark-theme{
     font-family:"poppins";
@@ -232,7 +234,7 @@ p.light-theme{
     z-index:2;
 }
 .dashboard-container.light-theme{
-    position:relative;
+    position:fixed;
     display:flex;
     flex-wrap:wrap;
     align-items: center;
@@ -241,6 +243,7 @@ p.light-theme{
     height:80px;
     background-color:rgb(255, 255, 255);
     gap:30px;
+    z-index: 2000;
 }
 .tabs-font.light-theme{
     font-family:"poppins";
