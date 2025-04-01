@@ -177,7 +177,8 @@ p.dark-theme{
     margin:0 auto;
     flex-wrap:wrap;
     justify-content: center;
-    width:1000px;
+    width:100%;
+    max-width:1000px;
     min-height:1000px;
     background-color: rgba(0, 0, 0, 0.4);
     top:-100px;
@@ -266,7 +267,8 @@ p.light-theme{
     margin:0 auto;
     flex-wrap:wrap;
     justify-content: center;
-    width:1000px;
+    width:100%;
+    max-width:1000px;
     min-height:1000px;
     background-color: rgb(245, 245, 245, 0.4);
     top:-100px;
