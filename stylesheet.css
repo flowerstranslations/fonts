@@ -105,29 +105,6 @@ a:active {
     z-index: 2000;
     overflow:hidden;
 }
-.theme-size{
-    width:50px;
-    height:40px;
-}
-.theme-size:hover{
-    opacity:0.7;
-    transition:opacity 0.3s ease-in-out;
-}
-
-#theme-toggle {
-    position: relative; /* So child images position relative to this */
-    width: 50px;  /* Match image size */
-    height: 40px;
-}
-
-#theme-toggle img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers both images */
-    width: 100%;  /* Ensures both images have same size */
-    height: 100%;
-}
 .tabs{
     display:flex;
     align-items:center;
@@ -301,7 +278,7 @@ p.light-theme{
 .dashboard-container.light-theme{
     position:fixed;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     align-items: center;
     justify-content: center;
     width:100%;
