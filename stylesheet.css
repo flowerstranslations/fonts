@@ -24,6 +24,9 @@
     .tabs{
         display:none !important;
     }
+    .page-container{
+        width:100%;
+    }
 }
 /* default theme */
 body{
