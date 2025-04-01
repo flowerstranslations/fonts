@@ -5,11 +5,11 @@ const themeSwitch = [
     document.body,
     document.querySelector('.dashboard-container'),
     ...document.querySelectorAll('.tabs-font'),
+    document.querySelector('.page-container'),
+    ...document.querySelectorAll('p'),
 ]
 toggleButton.addEventListener('click', function(){
     if(document.body.classList.contains('dark-theme')){
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
         sunImage.style.visibility = "hidden";
         moonImage.style.visibility = "visible";
         /* customizing every container/font to light mode */
@@ -19,15 +19,11 @@ toggleButton.addEventListener('click', function(){
         })
 
     } else{
-        document.body.classList.add('dark-theme');
-        document.body.classList.remove('light-theme');
         sunImage.style.visibility = "visible";
         moonImage.style.visibility = "hidden";
         themeSwitch.forEach(element => {
             element.classList.add('dark-theme');
             element.classList.remove('light-theme');
-            console.log(document.querySelector('.dashboard-container')); // Should not be null
-console.log(document.querySelectorAll('.tabs-font')); // Should show all the elements with the class 'tabs-font'
         })
     }
 });
