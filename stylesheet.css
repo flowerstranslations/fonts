@@ -24,9 +24,6 @@
     .tabs{
         display:none !important;
     }
-    .page-container{
-        width:100%;
-    }
 }
 /* default theme */
 body{
@@ -316,4 +313,14 @@ p.light-theme{
     height:200px;
     justify-content: center;
     align-items: center;
+}
+.kofi-link{
+    display:flex;
+    position:fixed;
+    bottom:40;
+    left:40;
+}
+.kofi-link:hover{
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
 }
