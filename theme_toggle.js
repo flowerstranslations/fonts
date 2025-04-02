@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ...document.querySelectorAll('.tabs-font'),
         document.querySelector('.page-container'),
         ...document.querySelectorAll('p'),
+        ...document.querySelectorAll('h5'),
     ];
 
     // Apply theme (dark or light)
