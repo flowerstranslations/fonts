@@ -386,6 +386,10 @@ p.light-theme {
     justify-content: center;
     align-items: center;
 }
+.footer:hover {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
 
 .kofi-link {
     display: flex;
