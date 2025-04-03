@@ -43,7 +43,7 @@
 
 @media(max-width:1300px) {
     .kofi-link {
-        display: none;
+        display: none !important;
     }
 }
 /* default theme */
