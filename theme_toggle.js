@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.page-container'),
         ...document.querySelectorAll('p'),
         ...document.querySelectorAll('h5'),
+        document.querySelector('.details-details'),
     ].filter(Boolean);  // Remove null values
 
     function applyTheme(theme) {
