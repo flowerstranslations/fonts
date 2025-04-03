@@ -281,6 +281,20 @@ p.dark-theme {
     color: white;
     cursor: pointer;
 }
+.details-details-dark-theme{
+    max-width: 1000px;
+    width:95%;
+    height:40%;
+    padding-left:40px;
+    padding-right:40px;
+    min-height:500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    display:flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap:wrap;
+}
 
 
 /*light theme*/
@@ -393,6 +407,20 @@ p.light-theme {
     color: black;
     cursor: pointer;
 }
+.details-details-light-theme{
+    max-width: 1000px;
+    width:95%;
+    height:40%;
+    padding-left:40px;
+    padding-right:40px;
+    min-height:500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    display:flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap:wrap;
+}
 
 
 
@@ -418,8 +446,8 @@ p.light-theme {
 .kofi-link {
     display: flex;
     position: fixed;
-    bottom: 40;
-    left: 40;
+    bottom: 40px;
+    left: 40px;
 }
 
 .kofi-link:hover {
