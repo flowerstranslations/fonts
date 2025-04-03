@@ -27,6 +27,12 @@
     .tabs {
         display: none !important;
     }
+    .more-bar{
+        display:flex !important;
+    }
+    .website-name{
+        width:50%;
+    }
 }
 
 /* default theme */
@@ -377,6 +383,13 @@ p.light-theme {
     cursor: pointer;
 }
 
+
+
+
+/* no theme change needed down below and beyond */
+
+
+
 .footer {
     position: absolute;
     display: flex;
@@ -401,4 +414,49 @@ p.light-theme {
 .kofi-link:hover {
     transition: opacity 0.3s ease-in-out;
     opacity: 0.7;
+}
+
+.more-bar{
+    width:25px;
+    height:25px;
+    cursor:pointer;
+    display:none;
+}
+.more-bar:hover{
+    translate:opacity 0.3s ease-in-out;
+    opacity:0.7;
+}
+.more-bar #img{
+    position:relative;
+    display:flex;
+}
+.more-tab-container{
+    position:fixed;
+    top:53px;
+    right:0;
+    min-width:200px;
+    height:auto;
+    opacity: 1;
+    display:none;
+    flex-direction: column;
+    z-index:10000;
+    border-radius:8px;
+    justify-content: center;
+    align-items: center;
+}
+.more-tab-boxes{
+    width:100%;
+    max-height:50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"geo", sans-serif;
+    font-size: 30px;
+    font-weight:800;
+    color:#f49a00;
+}
+.more-tab-boxes:hover{
+    translate:opacity 0.3s ease-in-out;
+    opacity:0.3;
 }
