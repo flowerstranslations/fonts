@@ -2,7 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById('theme-toggle');
     const sunImage = document.getElementById('sun');
     const moonImage = document.getElementById('moon');
-    const themeData = localStorage.getItem('theme') || 'dark';  // Default to dark theme if none stored
+    const moreButton = document.getElementById('more-button');
+    const moreTabContainer = document.getElementById('more-tab-cont');
+
+    const themeData = localStorage.getItem('theme') || 'dark'; 
+
     const themeSwitch = [
         document.body,
         document.querySelector('.dashboard-container'),
@@ -10,59 +14,47 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.page-container'),
         ...document.querySelectorAll('p'),
         ...document.querySelectorAll('h5'),
-    ];
+    ].filter(Boolean);  // Remove null values
 
-    // Apply theme (dark or light)
     function applyTheme(theme) {
+        if (!sunImage || !moonImage) return;  // Prevents errors
+
         if (theme === 'dark') {
             sunImage.style.visibility = "visible";
             moonImage.style.visibility = "hidden";
             themeSwitch.forEach(element => {
-                if (element) {
-                    element.classList.add('dark-theme');
-                    element.classList.remove('light-theme');
-                }
+                element.classList.add('dark-theme');
+                element.classList.remove('light-theme');
             });
         } else {
             sunImage.style.visibility = "hidden";
             moonImage.style.visibility = "visible";
             themeSwitch.forEach(element => {
-                if (element) {
-                    element.classList.add('light-theme');
-                    element.classList.remove('dark-theme');
-                }
+                element.classList.add('light-theme');
+                element.classList.remove('dark-theme');
             });
         }
     }
 
-    // Set initial theme based on localStorage or default (dark)
-    applyTheme(themeData);
+    if (toggleButton) {
+        applyTheme(themeData);
 
-    // Add event listener to toggle button
-    toggleButton.addEventListener('click', function () {
-        let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        toggleButton.addEventListener('click', function () {
+            let currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+    }
 
-        // Save the theme preference to localStorage
-        localStorage.setItem('theme', newTheme);
+    if (moreButton && moreTabContainer) {
+        moreButton.addEventListener('click', function () {
+            const currentDisplay = window.getComputedStyle(moreTabContainer).display;
+            moreTabContainer.style.display = (currentDisplay === 'none' || currentDisplay === '') ? 'flex' : 'none';
+        });
 
-        // Apply the new theme
-        applyTheme(newTheme);
-    });
- 
-        /* more tab click/hover function */
-
-    const moreButton = document.getElementById('more-button');
-            const moreTabContainer = document.getElementById('more-tab-cont');
-            moreButton.addEventListener('click', function(){
-                const currentDisplay = window.getComputedStyle(moreTabContainer).display;
-                if(currentDisplay === 'none' || ''){
-                    moreTabContainer.style.display = 'flex';
-                } else{
-                    moreTabContainer.style.display = 'none';
-                }
-            });
-            moreButton.addEventListener('mouseleave', function(){
-                moreTabContainer.style.display = 'none';
-            });
+        moreButton.addEventListener('mouseleave', function () {
+            moreTabContainer.style.display = 'none';
+        });
+    }
 });
