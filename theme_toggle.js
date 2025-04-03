@@ -49,4 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
         // Apply the new theme
         applyTheme(newTheme);
     });
+ 
+        /* more tab click/hover function */
+
+    const moreButton = document.getElementById('more-button');
+            const moreTabContainer = document.getElementById('more-tab-cont');
+            moreButton.addEventListener('click', function(){
+                const currentDisplay = window.getComputedStyle(moreTabContainer).display;
+                if(currentDisplay === 'none' || ''){
+                    moreTabContainer.style.display = 'flex';
+                } else{
+                    moreTabContainer.style.display = 'none';
+                }
+            });
+            moreButton.addEventListener('mouseleave', function(){
+                moreTabContainer.style.display = 'none';
+            });
 });
