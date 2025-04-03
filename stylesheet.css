@@ -458,7 +458,7 @@ p.light-theme {
 .more-tab-boxes{
     width:100%;
     max-height:50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -469,5 +469,5 @@ p.light-theme {
 }
 .more-tab-boxes:hover{
     translate:opacity 0.3s ease-in-out;
-    opacity:0.3;
+    opacity:0.7;
 }
