@@ -295,7 +295,7 @@ p.dark-theme {
     color: white;
     cursor: pointer;
 }
-.details-details-dark-theme{
+.details-details.dark-theme{
     max-width: 1000px;
     width:95%;
     height:40%;
@@ -421,7 +421,7 @@ p.light-theme {
     color: black;
     cursor: pointer;
 }
-.details-details-light-theme{
+.details-details.light-theme{
     max-width: 1000px;
     width:95%;
     height:40%;
