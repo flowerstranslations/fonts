@@ -496,6 +496,7 @@ p.light-theme {
     border-radius:8px;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 .more-tab-boxes{
     width:100%;
