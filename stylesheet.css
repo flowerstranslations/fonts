@@ -23,6 +23,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Aldo the Apache';
+    src: url('AldotheApache.woff2') format('woff2'),
+        url('AldotheApache.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @media(max-width:1000px) {
     .tabs {
         display: none !important;
